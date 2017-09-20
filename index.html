@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="author" href="https://plus.google.com/u/0/+ShohagBhuiyan">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="Shohag Bhuiyan">
+<meta property="article:author" content="http://au.linkedin.com/in/shohagbhuiyan/" />
+<meta property="article:publisher" content="http://www.shohagbhuiyan.com" />
+<meta name="description" content="Australia Islamic Prayer Time">
+<meta property="og:title" content="Daily Prayer Timetable for Muslim"/>
+<link rel="icon" href="/img/icon.png"/>
+<meta property="og:image" content="/img/icon.png"/>
+<meta property="og:url" content="http://salat.shohagbhuiyan.com/">
+<meta property="og:description" content="Muslim prayer timetable. You can update your location & timezone. This timetable recites Athan on five prayer times."/>
+<link rel="icon" href="/img/icon.png">
+<!--[if IE]><link rel="shortcut icon" href="/img/icon.png"><![endif]-->
+<link rel="apple-touch-icon" href="/img/icon.png" />
+<link rel="icon" href="/img/icon.png" >
+</head>
+<link href="style/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/PrayTimes.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+<div class="mainContainer container">
+  <div class="center center-block centered center-align"><i class="material-icons center">location_city</i><span id="city"></span></div>
+
+   
+     
+
+  
+  
+ <!-- Modal Trigger -->
+  <a id="changeLoc" class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons left">add_location</i>Change Location</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+	<h5>Change Geolocation Coordinates:</h5>
+    <span class="teal-text text-lighten-2">city</span><br>
+    <input type="text" name="city" id="cityInput" value="Melbourne, VIC, Australia">
+    <br>
+    <span class="teal-text text-lighten-2">latitude</span><br>
+    <input type="text" name="latitude" id="lat" value="-37.8136">
+    <br>
+    <span class="teal-text text-lighten-2">longitude</span><br>
+    <input type="text" name="longitude" id="lon" value="144.9631">
+    <br>
+    <span class="teal-text text-lighten-2">timezone</span><br>
+    <input type="text" name="timezone" id="timezone" value="+10">
+    <br>
+    <br>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  
+    
+        
+  
+  
+  <div align="center" id="table"></div>
+  <div align="center" class="cTime"><strong><br>
+    Current Time: &nbsp;</strong><span id="nowTime"></span></div>
+  
+<!--  <div align="center" id="7">16:39</div>-->
+  
+  <audio id="fajrMp3">
+    <source src="mp3/Al-Fajr-Cairo.mp3" type="audio/mpeg">
+    Your browser does not support the audio element. </audio>
+  <audio id="athanMp3">
+    <source src="mp3/Madina.mp3" type="audio/mpeg">
+    Your browser does not support the audio element. </audio>
+</div>
+<div class="credit"> Credits:
+  <ul>
+    <li>Fajr Athan Audio: <a href="http://www.islamweb.net/emainpage/index.php?page=adhan" target="_blank">IslamWeb</a></li>
+    <li>Other Athan Audio: <a href="http://praytimes.org/audio/" target="_blank">praytimes.org</a></li>
+    <li>Athan calculation script: <a href="http://praytimes.org/" target="_blank">praytimes.org</a></li>
+    <li>Development: <a href="http://shohagbhuiyan.com/">Shohag Bhuiyan</a></li>
+    <li>
+      <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a></p>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16691641-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
